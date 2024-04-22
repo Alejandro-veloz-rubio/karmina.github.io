@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="APP_EMPLEADO/style_empleado.css">
+    <!--Se establece el titulo de html-->
+    <title>Document Empleados</title>
+</head>
+<body>
+  <a href="../menu/index.html" id="menu">Menu</a><br><br><br>
+    
+    <!--Se crea un formulario que permitre agregar un nuevo empleado-->
+    <form id="add_em"> 
+         <!--Se pone el titulo del la funcion -->
+        <h1>Agregar empleados</h1><br><br>
+
+        <label >Apellido paterno:</label><br>
+        <input type="text" id="apellido_p" name="apellido_p"><br><br>
+
+        <label >Apellido materno:</label><br>
+        <input type="text" id="apellido_m" name="apellido_m"><br><br>
+
+        <label >Nombres:</label><br>
+        <input type="text" id="nombres" name="nombres"><br><br>
+
+        <label >Numero de nomina:</label><br>
+        <input type="number" id="num_nomina" name="num_nomina"><br><br>
+        
+        <label >Area a asignar:</label><br>
+        <select name="areas_hotel_empleados" id="areas_hotel_empleados"></select><br><br>
+
+        <label >Puesto:</label><br>
+        <input type="text" id="puesto" name="puesto"><br><br>
+
+        <button type="button" id="btnagregar">Agregar</button>
+      </form><br><br><br>
+
+      <!--Se pone el titulo del la funcion -->
+      <h1>Modificar empleados</h1>
+
+      <!--Se establece un select para selecionar el area-->
+        <label>Seleccione un area:</label><br>
+
+          <select name="area" id="areas_edit"></select>
+
+        <!--Este boton llama a una funcion que permite buscar empleados a traves del empleado seleccionado en select
+        se mandan parametros que serviran en el js-->
+        <button id="btn_buscar_empleado_edit" name="" onclick="buscar_empleados('areas_edit','empleados_edit','modificar','empleado_edit_div')">Buscar empleados</button><br><br>
+
+        <!--Elemento div que permitira mostrar los empleados del area para editarlos-->
+        <div id="empleado_edit_div"> </div>
+
+        <!--Elemento div que permitira mostrar la infromacion del empleado seleccionado a editar-->
+        <div id="edit"></div><br><br>
+
+
+      <!--Se pone el titulo del la funcion -->
+      <h1>Eliminar Empleados</h1>
+      
+      <!--Se establece un select para selecionar el area-->
+        <label>Seleccione un area:</label><br>
+
+        <select name="areas_delete" id="areas_delete">
+          <option value="">*</option>
+        </select>
+
+        <!--Este boton llama a una funcion que permite buscar empleados a traves del empleado seleccionado en select
+        se mandan parametros que serviran en el js-->
+        <button id="btn_buscar_empleado_delete" onclick="buscar_empleados('areas_delete','empleados_delete','eliminar','empleado_delete_div')">Buscar empleados</button><br><br>
+
+        <!--Elemento div que permitira mostrar los empleados del area para eliminarlos-->
+        <div id="empleado_delete_div"> </div> 
+
+        <!--Elemento div que permitira mostrar un boton para eliminar un empleado-->
+        <div id="delete"></div><br><br>
+
+        <!--Se conecta el html a un archivo js-->
+    <script src="APP_EMPLEADO/app_empleado.js"></script>
+</body>
+</html>

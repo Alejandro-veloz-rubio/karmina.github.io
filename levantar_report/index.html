@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="JS/style_client.css">
+    <title>Incidencias</title>
+</head>
+<body>
+    <a href="../menu/index.html" id="menu">Menu</a><br><br><br>
+    <!--Se pone titulo a la interfaz html-->
+    <h1>Reporte de incidencias Barcelo</h1>
+    
+    <!--Se crea un formulario donde se registrara el reporte del cliente-->
+    <form id="form_client"> 
+        <label>Numero de habitación:</label><br>
+        <input type="number" id="num_room" name="num_room"><br><br>
+
+        <label>Tipo de Incidencia:</label><br>
+        <select name="tipos_inci" id="tipos_inci"></select><br><br><br>
+
+        <label>Observaciones:</label><br>
+        <textarea name="Observaciones" id="Observaciones" ></textarea><br><br><br>
+
+        <!--Este boton permite agregar la incidencia-->
+        <button type="button" id="btnagregar">Agregar</button>
+    </form>
+
+    <!--El archivo HTMl se conecta con el archivo JS-->
+    <script src="JS/app.js"></script>
+</body>
+</html>

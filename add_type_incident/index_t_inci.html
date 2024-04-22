@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="APP_T_INCI/style_inci.css">
+    <!--Se establece el titulo del html-->
+    <title>Document Incidencias</title>
+</head>
+<body>
+    <a href="../menu/index.html" id="menu">Menu</a><br><br><br>
+    <!--Se crea un formulario en donde se agregara una nueva incidencia-->
+    <form id="form_inci">
+
+        <h1>Agregar Tipos de Incidencias</h1><br><br>
+
+        <label>Nombre del tipo de Incidencia:</label><br>
+        <input type="text" id="name_in" name="name_in"><br><br>
+
+        <label>Descripcion tipo de Incidencia:</label><br>
+        <textarea id="descrip" name="descrip"></textarea><br><br>
+
+        <label>Asignar area:</label><br>
+        <select name="Areas_hotel" id="Areas_hotel"></select><br><br><br>
+
+        <!--Este boton permitira agregar toda la informacion del los input y selects-->
+        <button type="button" id="btnagregar">Agregar</button>
+
+
+    </form><br><br><br>
+        
+   <!--En esta apartado se podra modifcar las incidencias necesarias-->
+    <h1>Modificar Tipos de Incidencias</h1>
+
+    <label>Selecione un area:</label><br>
+    <select name="Areas_hotel_edit_s" id="Areas_hotel_edit_s"></select>
+
+    <!--Este boton buscara las incidencias del area-->
+    <button type="button" id="btn_buscar_inci" onclick="buscar_inci_area('Areas_hotel_edit_s','tipos_inci','modificar','inci_area')">Buscar incidencias del area</button><br><br>
+
+    <!--En estos divs se pondra las incidencias del area-->
+    <div id="inci_area"></div>
+    <!--En este apartado se pondra la incidencia a editar-->
+    <div id="edit_inci"></div><br><br>
+
+    <!--En esta apartado se podra eliminar las incidencias necesarias-->
+    <h1>Eliminar Tipos de Incidencias</h1>
+    <label>Selecione un area:</label><br>
+    <select name="Areas_hotel_delete_s" id="Areas_hotel_delete_s"></select>
+    <!--Este boton buscara las incidencias del area-->
+    <button type="button" id="btn_buscar_inci" onclick="buscar_inci_area('Areas_hotel_delete_s','tipos_inci_delete','eliminar','inci_area_delete')">Buscar incidencias del area</button><br><br>
+
+    <!--En estos divs se pondra las incidencias del area-->
+    <div id="inci_area_delete"></div>
+    <!--En este apartado se pondra la incidencia a eliminar-->
+    <div id="delete_inci"></div>
+
+    <!--este archivo HTML se conecta un archivo JS-->
+    <script src="APP_T_INCI/app_t_inci.js"></script>
+</body>
+</html>

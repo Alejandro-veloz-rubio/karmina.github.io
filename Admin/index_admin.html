@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Se agrega estilo a la tabla con css-->
+    <link rel="stylesheet" type="text/css" href="APP_AD/style_admin.css">
+    <!--Se pone un titulo al documento HTML-->
+    <title>Asignacion de responsables</title>
+    
+</head>
+<body>
+    <a href="../menu/index.html" id="menu">Menu</a><br><br><br>
+    <!--Se establece un titulo para la interfaz-->
+    <h1>Busqueda reportes abiertos</h1>
+    <label>Seleccione al area a la que pertenece: </label><br><br>
+    <!--Se mostrara las areas en este select-->
+    <select name="areas" id="areas"></select>
+    <!--Este boton permitira buscar los reportes abiertos de cada area-->
+    <button id="btn_buscar_area" onclick="buscar_reportes()">Buscar Reportes del area</button><br><br>
+
+    <!--En esta tabla se mostraran lso reportes abiertos-->
+    <table id="result_problem" class="content-table"></table>
+
+    
+    <!--Este archivo html se conecta con un archivo JS-->
+    <script src="APP_AD/app_admin.js"></script>
+</body>
+</html>

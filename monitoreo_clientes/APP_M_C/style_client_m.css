@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  background-image: url(../../Imagenes/monitoreo_clientes.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+
+h1 {
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input{
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#report-info {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#report-info p {
+  margin: 5px 0;
+}
+
+#container{
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  max-width: 400px;
+  margin-top: 40px;
+  margin: 0 auto;
+}
+
+#table_info {
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 1em;
+  min-width: 100px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#table_info thead tr {
+  background-color: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#table_info th,
+#table_info td {
+  padding: 12px 15px;
+}
+
+#table_info tbody tr {
+  border-bottom: 1px solid #dddddd;
+  background-color: #f3f3f3;
+}
+
+#table_info tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+#table_info tbody tr:last-of-type {
+  border-bottom: 2px solid #007bff;
+}

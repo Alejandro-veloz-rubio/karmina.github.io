@@ -1,0 +1,104 @@
+/* Resetear estilos predeterminados */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../../Imagenes/menu.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.4em;
+}
+
+/* Estilo del contenedor del menú */
+div.menu-container {
+    background-color: #f8f9fafb; /* Color de fondo */
+    padding: 1em; /* Espacio interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 3); /* Sombra */
+    width: 17.1em;
+    height: 15em;
+    margin: 0 auto;
+}
+
+/* Estilo de los enlaces del menú */
+div.menu-container a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #333; /* Color del texto */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    margin-right: 20px; /* Margen derecho entre enlaces */
+    transition: color 0.3s; /* Transición de color */
+    font-weight: bold;
+}
+
+/* Estilo de los enlaces del menú al pasar el cursor */
+div.menu-container a:hover {
+    color: #007bff; /* Cambio de color al pasar el cursor */
+}
+
+
+div.menu-container {
+    border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilo de los enlaces del menú */
+div.menu-container a {
+    padding: 10px 20px; /* Espacio interno */
+}
+
+
+/* Estilo de los enlaces del menú al pasar el cursor */
+div.menu-container a:hover {
+    color: #fff; /* Cambio de color al pasar el cursor */
+    background-color: #007bff; /* Cambio de color de fondo al pasar el cursor */
+    border-radius: 10px;
+}
+
+
+/****************/
+
+
+/* Estilo del contenedor del menú */
+div.menu-container_2 {
+    background-color: #f8f9fafb; /* Color de fondo */
+    padding: 1em; /* Espacio interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 3); /* Sombra */
+    width: 11em;
+    height: 12em;
+    margin: 0 auto;
+    
+}
+
+/* Estilo de los enlaces del menú */
+div.menu-container_2 a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #333; /* Color del texto */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    margin-right: 20px; /* Margen derecho entre enlaces */
+    transition: color 0.3s; /* Transición de color */
+    font-weight: bold;
+}
+
+/* Estilo de los enlaces del menú al pasar el cursor */
+div.menu-container_2 a:hover {
+    color: #007bff; /* Cambio de color al pasar el cursor */
+}
+
+
+div.menu-container_2 {
+    border-radius: 10px; /* Borde redondeado */
+}
+
+/* Estilo de los enlaces del menú */
+div.menu-container_2 a {
+    padding: 10px 20px; /* Espacio interno */
+}
+
+
+/* Estilo de los enlaces del menú al pasar el cursor */
+div.menu-container_2 a:hover {
+    color: #fff; /* Cambio de color al pasar el cursor */
+    background-color: #007bff; /* Cambio de color de fondo al pasar el cursor */
+    border-radius: 10px;
+}

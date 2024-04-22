@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Monitoreo</title>
+    <!--Se pone estilo a los elementos html-->
+    <link rel="stylesheet" type="text/css" href="app_m/style_moni.css">
+</head>
+<body>
+
+    <a href="../menu/index.html" id="menu">Menu</a><br><br><br>
+    <h1>Reportes de clientes</h1><br>
+
+
+    <!--Se muestra los filtros a usar para buscar reportes-->
+        <label>Area a seleccionar:</label>
+        <select name="areas" id="areas_reportes"></select>
+        <button id="btn_buscar_empleados">Buscar Empleados</button><br><br>
+
+        <div id="empleados_div">
+
+        </div><br>
+
+        <label>Fecha a buscar, con ceros a la izquierda en dia o año (cuando se necesite)</label>
+        <input  type="text" id="fecha" placeholder="dia-mes-año"><br><br><br>
+
+        <label>Numero de habitación</label>
+        <input  type="number" id="num_room"><br><br><br>
+
+        <label>Folio</label>
+        <input  type="number" id="folio"><br><br><br>
+
+        <label>Estatus a seleccionar:</label>
+        <select name="estado" id="estados">
+            <option value="">*</option>
+            <option value="Abierto">Abierto</option>
+            <option value="En proceso">En proceso</option>
+            <option value="Cerrado">Cerrado</option>
+            <option value="Inconcluso">Inconcluso</option>
+        </select><br><br><br>
+        
+        <!--boton donde se buscara reportes en base a los filtros seleccionados-->
+        <button id="btn_buscar_reparea">Buscar Reportes</button><br><br>
+
+   
+        <!--Tabla donde se muestran los reportes-->
+         <table id="result_all_reports" class="content-table"></table>
+    
+    <script src="app_m/app_m.js"></script>
+</body>
+</html>

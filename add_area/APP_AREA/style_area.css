@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    background-image: url(../../Imagenes/areas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin:0 auto;
+    
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input {
+    width: 59%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#nom_area_edit {
+    width: 19%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+select {
+    width: 19%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#labelxd {
+    margin-bottom: 10px;
+    color: #141414;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin:0 auto;
+  }
+  
+  .content-table thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #007bff;
+  }
+
+  a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #121111; /* Color del texto */
+    font-size: 25px; /* Tamaño de la fuente */
+    margin-right: 20px; /* Margen derecho entre enlaces */
+    transition: color 0.3s; /* Transición de color */
+    padding: 10px 20px; /* Espacio interno */
+   
+    background-color: #ffffff; 
+    border-radius: 100px;
+  }
+  
+  a:hover {
+    color: #fff; /* Cambio de color al pasar el cursor */
+    background-color: #007bff; /* Cambio de color de fondo al pasar el cursor */
+    border-radius: 100px;
+  }
+
+  form h1{
+    color:#201f1f;
+  }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Se agrega estilo a los elementos html-->
+    <link rel="stylesheet" type="text/css" href="app_respon/style_respon.css">
+    <title>Responsables</title>
+</head>
+<body>
+    <a href="../menu/index.html" id="menu">Menu</a><br><br>
+    <!--Se establece los campos necesarios para que el personl busque sus reportes-->
+    <h1>Lista de pendientes</h1>
+
+    <label >Seleccione el area a la que pertenece: </label><br><br>
+    <select name="areas_empleados" id="areas_empleados"></select>
+
+    <!--este boton acionara todo el proceso necesario-->
+    <button id="btn_busemple" onclick="buscar_empleados()">Buscar empleados</button>
+    <button id="btn_buscareportes" onclick="buscar_reportes_areas()">Buscar Reportes por area</button><br><br><br><br>
+
+    <!--aqui se mostrara los empleados por area-->
+    <div id="empleados">
+    </div><br><br>
+
+    <!--aqui se meustra los reportes de cada empleado-->
+    <table id="tabla_reportes" class="content-table"></table>
+
+    <!--Se conecta a un archivo JS-->
+    <script src="app_respon/app_respon.js"></script>
+</body>
+</html>

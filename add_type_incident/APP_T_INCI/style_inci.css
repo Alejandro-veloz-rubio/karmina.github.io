@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    background-image: url(../../Imagenes/incidencias.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,#Areas_hotel,#Areas_hotel_edit {
+    width: 59%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 19%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 70%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+    /* Estilo de los enlaces del menú */
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #ffffff; /* Color del texto */
+    font-size: 25px; /* Tamaño de la fuente */
+    margin-right: 20px; /* Margen derecho entre enlaces */
+    transition: color 0.3s; /* Transición de color */
+    padding: 10px 20px; /* Espacio interno */
+    background-color: #000000; 
+    border-radius: 100px;
+  }
+  
+  a:hover {
+    color: #fff; /* Cambio de color al pasar el cursor */
+    background-color: #007bff; /* Cambio de color de fondo al pasar el cursor */
+    border-radius: 100px;
+  }

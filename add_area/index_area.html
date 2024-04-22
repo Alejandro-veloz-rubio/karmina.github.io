@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Areas</title>
+    <link rel="stylesheet" type="text/css" href="APP_AREA/style_area.css">
+    <!--Se establece un estilo para las tablas-->
+</head>
+<body>
+    <a href="../menu/index.html" id="menu">Menu</a><br><br><br>
+    <!--Se usa un titulo de la tarea a ejecutar -->
+    <h1>Mostrar todas las areas del hotel</h1>
+
+    <!-- Este boton nos permitira mostrar las areas que se encuentran la base de datos-->
+    <button id="btn_show_areas">Mostrar areas</button><br><br>
+
+    <!--Esta table mostrara los valores que la base de datos arrojo-->
+    <table id="tabla_areas"  class="content-table"></table><br><br>
+
+    
+    <!--Se crea un fromulario con su respectivo id-->
+    <form id="form_area"> 
+
+        <!--Se usa un titulo de la tarea a ejecutar -->
+        <h1>Agregar areas del hotel</h1>
+        <!--Se usa una etiqueta y se pone un input el cual recibira el nombre de la area-->
+        <label id="labelxd">Nombre del area: </label><br>
+        <input type="text" id="nom_area"><br><br>
+
+        <!--Este boton agrega una nueva area-->
+        <button type="button" id="btnagregar">Agregar</button>
+    </form><br><br><br>
+
+      <!--Se usa un titulo de la tarea a ejecutar -->
+    <h1>Modificar areas del hotel</h1>
+
+    <!--Se usa un parrafo-->
+    <label>Escoja al area a modificar</label><br><br>
+    <!--Se crea un select que tendra todas las areas-->
+    <select id="areas"></select>
+    <!--El boton al ser clickeado llama a una funcion pasando por parametro 'areas'-->
+    <button id="btn_bus_dispo" onclick="dispo_g('areas')">Buscar disponibilidad de modificación</button><br><br>
+    <!--En este div se mostrara infromacion por parte de la funcion llamada anteriomente-->
+    <div id="edit"></div><br><br>
+
+    <!--Se usa un titulo de la tarea a ejecutar -->
+    <h1>Eliminar areas del hotel</h1>
+
+    <!--Se usa un parrafo-->
+    <label>Porfavor escoja al area a eliminar</label><br><br>
+    <!--Se crea un select que tendra todas las areas-->
+    <select id="areas_delete"></select>
+    <!--El boton al ser clickeado llama a una funcion pasando por parametro 'areas_delete'-->
+    <button id="btn_bus_dispo_delete"  onclick="dispo_g('areas_delete')" >Buscar disponibilidad de eliminación</button><br><br>
+    
+    <!--En este div se mostrara infromacion por parte de la funcion llamada anteriomente-->
+    <div id="delete"></div>
+
+    <!--Se establece conexion con un archivo js-->
+    <script src="APP_AREA/app_area.js"></script>
+</body>
+</html>
